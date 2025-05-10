@@ -9,6 +9,9 @@ export const ProjectCard = ({
   return (
     <div className={styles.cardcontainer}>
     <div className={styles.container}>
+      <div className={styles.card}>
+        
+     
       <img
         src={getImageUrl(imageSrc)}
         alt={`Image of ${title}`}
@@ -35,6 +38,6 @@ export const ProjectCard = ({
       </div>
     </div>
     </div>
-
+ </div>
   );
 };

@@ -206,26 +206,29 @@ export const Contact = () => {
      
 
      <a href="https://www.instagram.com/ritika_sha_.rma/"><img className={styles.linkimg} src={getImageUrl("contact/Instagram.png")} alt="Instagram icon" /></a>
-            
             <a className={styles.attributes}href="https://www.instagram.com/ritika_sha_.rma/">Instagram</a>
           </li>
+
+
           <li className={styles.link}>
-           <a href=""> <img className={styles.linkimg}
+           <a href="https://www.linkedin.com/in/ritika-sharma-62652023b/"> <img className={styles.linkimg}
               src={getImageUrl("contact/linkedinIcon.png")}
               alt="LinkedIn icon"
             /></a>
-           
-           
-            <a className={styles.attributes}href="https://www.linkedin.com/in/ritika-sharma-62652023b/">
+          <a className={styles.attributes}href="https://www.linkedin.com/in/ritika-sharma-62652023b/">
               Linkedin
             </a>
           </li>
+
+
           <li className={styles.link}>
             <a href="https://github.com/RitikaSharma003"> 
             <img className={styles.linkimg} src={getImageUrl("contact/githubIcon.png")} alt="Github icon" /></a>
-           
-            <a className={styles.attributes} rhref="https://github.com/RitikaSharma003">Github</a>
+           <a className={styles.attributes} rhref="https://github.com/RitikaSharma003">Github</a>
           </li>
+
+
+
         </ul>
       </footer>
     </div>

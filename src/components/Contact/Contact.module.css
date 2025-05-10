@@ -83,7 +83,7 @@ font-family:Arial, Helvetica, sans-serif;
 .contactHeading{
   font-family: sans-serif;
   margin-left:102px;
-  color:cyan;
+   color:rgb(0, 166, 255);
 text-transform: uppercase;
 margin-top:30px;
 font-weight:400;
@@ -92,7 +92,7 @@ font-size:18px;
 }
 
 .interior{
-  color:rgb(172, 65, 145);
+  color:rgb(120, 36, 99);
   font-size: 20px;
 }
 .submitButton:hover {
@@ -233,6 +233,32 @@ font-size:18px;
   }
 }
 
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    padding: 12px;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .text, .links {
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    text-align: center;
+  }
+
+  .links a {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    word-break:normal;
+  }
+}
+
+
+
 /* Style for input and textarea */
 .inputName, .inputEmail, .inputMessage {
   padding: 0.75rem;
@@ -305,6 +331,8 @@ font-size:18px;
   
   font-size:4px;
   font-family:font-serif;
+  display:block;width:100%;
+
 
 
 }
@@ -318,4 +346,186 @@ font-size:18px;
   display:flex;
 
     justify-content: right;
+}
+
+/* 
+
+@media screen and (max-width: 500px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .link {
+    display: flex;
+    flex-direction: column; /* 👈 naam neeche aayega 
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+  }
+
+  .linkimg {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(177, 13, 177);
+  }
+
+  .linkimg:hover {
+    border: 2px solid rgb(92, 193, 236);
+  }
+
+  .attributes {
+    
+    margin-top: 6px;
+    font-size: 14px;
+    color: white; /* ya tumhara actual text color 
+    text-align: center;
+    text-decoration: none;
+  }
+/* } */ 
+
+
+@media screen and (max-width: 500px) {
+  .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .linkimg {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .attributes {
+    margin-top: 4px;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 300px) {
+  .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .linkimg {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .attributes {
+    margin-top: 4px;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .inputName, .inputEmail, .inputMessage {
+    width: 100%;
+    max-width: 95vw; /* Wider than 100% of their parent if needed */
+    box-sizing: border-box;
+  }
+}
+/* @media (max-width: 500px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .pageContainer {
+    width: 100%;
+    padding: 0 10px; /* Padding for smaller screens
+    box-sizing: border-box;
+  }
+
+  .contactContainer,
+  .formContainer {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .inputName,
+  .inputEmail,
+  .inputMessage {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Adjust Flex Wrapper for smaller screens 
+  .flexWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+} */
+
+
+/* For small screens below 500px */
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column; /* Stack the content vertically */
+    padding: 12px;
+    gap: 16px;
+  }
+
+  .flexWrapper {
+    flex-direction: column; /* Stack items inside flexWrapper */
+    gap: 1.5rem; /* Increase gap between elements */
+    padding: 1rem;
+    width: 100%; /* Ensure it doesn't overflow */
+ 
+  }
+
+  .contactContainer, .formContainer {
+    width: 100%; /* Ensure full width */
+  }
+
+  .inputName, .inputEmail, .inputMessage {
+    width: 100%; /* Ensure inputs take full width */
+    box-sizing: border-box; /* Ensure padding doesn't overflow */
+  }
+  
+  .description {
+    font-size: 16px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .contactHeading {
+    font-size: 18px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
