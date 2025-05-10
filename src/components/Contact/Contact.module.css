@@ -521,11 +521,14 @@ font-size:18px;
     font-size: 16px;
     margin-left: 5px;
     margin-right: 5px;
+ text-align:center;
+
   }
 
   .contactHeading {
     font-size: 18px;
     margin-left: 0;
     margin-top: 10px;
+    text-align:center;
   }
 }
