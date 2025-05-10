@@ -23,7 +23,18 @@
   flex-wrap:wrap;
 
 }
+@media (max-width: 480px) {
+  .container {
+    padding: 15px 15px;
+    max-width: 100%;
+    border-width: 1.5px;
+  }
 
+  .cardcontainer {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+}
 .image {
   margin-bottom: 20px;
   height:200px;

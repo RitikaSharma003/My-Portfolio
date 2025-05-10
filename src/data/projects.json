@@ -21,7 +21,7 @@
     "imageSrc": "projects/myportfolio.png",
     "description": "Developed a refined and aesthetically pleasing portfolio with HTML, CSS, and React.js, thoughtfully structured to convey the breadth of my skills and depth of my experience. providing a comprehensive overview of my expertise and achievements.",
     "skills": ["React","Javascript"],
-    "demo": "https://ritikasharma-portfoliowebsite.netlify.app/",
+    "demo":"https://ritikasharma-portfoliowebsite.netlify.app/",
     "source": "https://github.com/RitikaSharma003/My-Portfolio"
   }
 ]
