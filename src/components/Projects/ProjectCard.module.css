@@ -23,18 +23,92 @@
   flex-wrap:wrap;
 
 }
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   .container {
-    padding: 15px 15px;
-    max-width: 100%;
-    border-width: 1.5px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   .cardcontainer {
-    padding: 20px 10px;
-    gap: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 150px;
   }
 }
+/* 
+@media (min-width: 500px) {
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
+    display:flex;
+
+  }
+
+  .cardcontainer {
+   padding-left: 6px;
+    padding-right: 6px;
+     display:flex;
+    
+  }
+} */
+
+/* @media (min-width: 410px) {
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
+     display:flex;
+    
+  }
+
+  .cardcontainer {
+   padding-left: 1px;
+    padding-right: 1px;
+    display:flex;
+    
+  }
+} */
+/* 
+@media (min-width: 400px) {
+  .container {
+    padding-left: 6px;
+    padding-right: 6px;
+     display:flex;
+    
+  }
+
+  .cardcontainer {
+   padding-left: 1px;
+    padding-right: 1px;
+    display:flex;
+    
+  }
+} */
+
+/* @media (min-width: 395px) {
+  .container {
+    padding-left: 6px;
+    padding-right: 6px;
+     display:flex;
+    
+  }
+
+  .cardcontainer {
+   padding-left: 1px;
+    padding-right: 1px;
+    display:flex;
+    
+  }
+}
+ */
+
+
+
 .image {
   margin-bottom: 20px;
   height:200px;
