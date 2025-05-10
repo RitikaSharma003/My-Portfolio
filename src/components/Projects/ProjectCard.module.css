@@ -1,0 +1,89 @@
+@import "../../vars.css";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #17224b 0%, #1d3868 100%);
+  word-spacing: normal;
+  padding: 18px 25px; 
+  padding-bottom:25px;
+  max-width: 410px;
+  border:2px solid rgb(0, 145, 255);
+  height:100%
+}
+.container:hover{
+  box-shadow: 0 16px 14px 0 #153c72;
+
+}
+.cardcontainer{
+  gap:20px;
+  padding:30px;
+  display:flex;
+  flex-wrap:wrap;
+
+}
+
+.image {
+  margin-bottom: 20px;
+  height:200px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 400;
+  color:rgb(218, 69, 213);
+}
+
+.description {
+  margin-top: 6px;
+  font-size:20px;
+  font-weight: 30px;
+}
+
+.skills {
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 7px;
+  list-style: none;
+   /* Consistent left margin */
+margin-left:5px;
+ 
+}
+
+.skill {
+  font-size: 15px;
+  font-weight: 100;
+  border-radius: 100px;
+  background:rgb(137, 33, 116);
+  padding: 5px 29px;
+  border:1px solid rgb(63, 92, 223);
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.links {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.link {
+  text-decoration: none;
+  color:white;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top:4px;
+  border-radius: 100px;
+  background: rgb(68, 124, 175);
+  padding: 4px 22px;
+  border:1px solid cyan;
+}
+.link:hover{
+  border:2px solid rgb(60, 91, 153);
+  background:rgb(115, 60, 146);
+  
+}

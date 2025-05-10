@@ -1,0 +1,208 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  background-color: rgba(14, 39, 92, 0.568);
+  border-radius: 15px;
+  padding: 60px;
+  border:1px solid rgb(51, 108, 155);
+  margin-top: 80px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+ 
+}
+p{
+  text-align:justify;
+  font-size:5px;
+ padding-top: 5px;
+   line-height: 1; 
+   font-family:serif;
+   color:rgb(189, 222, 246);
+}
+
+p {
+  text-align: justify;
+  font-size: 10px; /* Default font size */
+  padding-top: 1px;
+  
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Medium screens (768px and up) ke liye font size badlein */
+@media (min-width: 768px) {
+  p {
+    font-size: 12px;
+  }
+}
+
+/* Large screens (1024px and up) ke liye font size aur padding badlein */
+@media (min-width: 1024px) {
+  p {
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+}
+h2{
+  padding-bottom:10px;
+  font-family: font-serif;
+
+}
+
+
+h3 {
+  color: rgb(152, 27, 215);
+  font-family: font-serif;
+  /* Default padding (sabse chote screens ke liye) */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* sm screens ke liye (350px aur upar) */
+@media (min-width: 250px) {
+  h3,h2 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 350px) {
+  h3,h2 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* md screens ke liye (768px aur upar) */
+@media (min-width: 768px) {
+  h3,h2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* lg screens ke liye (1024px aur upar) */
+@media (min-width: 1024px) {
+  h3,h2 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+/* xl screens ke liye (1280px aur upar) */
+@media (min-width: 1280px) {
+  h3,h2 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* 2xl screens ke liye (1536px aur upar) */
+@media (min-width: 1536px) {
+  h3 ,h2{
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+
+
+
+
+
+
+.title {
+  
+  font-size: 30px;
+  font-weight: 500;
+  color:cyan;
+
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 10px;
+  
+
+}
+
+.aboutImage {
+  width: 35%;
+}
+
+.aboutItems {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+h3{
+  /* color:rgb(113, 56, 183); */
+  font-family:font-serif;
+color:rgb(177, 81, 177);
+font-weight: 200;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 20px;
+  list-style: none;
+  padding-top:4px;
+  padding: 10px;
+  background-image: linear-gradient(
+ 90deg,
+    rgba(149, 67, 143, 0.42) 0%,
+    rgba(161, 89, 206, 0) 100%
+  
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+}
+
+.aboutItem:hover {
+  background-size: 100% 100%;
+}
+
+.aboutItem h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.aboutItem p {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .aboutImage {
+    display: none;
+  }
+
+  .aboutItems {
+    margin-top: 29px;
+  }
+
+  .aboutItem {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

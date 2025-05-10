@@ -1,0 +1,50 @@
+[
+  {
+    "title": "HTML",
+    "imageSrc": "skills/html.png"
+  },
+  {
+    "title": "CSS",
+    "imageSrc":"skills/css.png"
+  },
+  {
+    "title": "React",
+    "imageSrc":"skills/react.png"
+  },
+  {
+    "title": "NodeJS",
+    "imageSrc":"skills/node.png"
+  },
+  {
+    "title": "Javascript",
+    "imageSrc":"skills/javascript.png"
+  },
+  {
+    "title": "Bootsrap",
+    "imageSrc": "skills/bootstrap.png"
+  },
+  {
+    "title": "Tailwind CSS",
+    "imageSrc":"skills/tailwindcss.png"
+  },
+  {
+    "title": "SQl",
+    "imageSrc":"skills/sql.png"
+  },
+  {
+    "title": "C++",
+    "imageSrc": "skills/cpp.png"
+  },
+  {
+    "title": "OOPS",
+    "imageSrc":"skills/oops.png"
+  },
+  {
+    "title": "Data Structure",
+    "imageSrc":"skills/datastructure.png"
+  }
+
+  
+
+
+]

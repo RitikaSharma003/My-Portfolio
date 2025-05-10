@@ -1,0 +1,321 @@
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  margin-top: 120px;
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  padding: 58px 10%;
+  gap: 10px;
+  border:#0056b3;
+}
+
+.flexWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.contactContainer {
+  flex: 1;
+  max-width: 600px;
+}
+
+.footerContainer {
+  flex: 1;
+  max-width: 500px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inputName,
+.inputEmail,
+.inputMessage {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.pageContainer{
+  position: relative;
+  background-color: rgba(14, 39, 92, 0.568);
+  border-radius: 15px;
+  padding: 60px;
+  border:1px solid rgb(51, 108, 155);
+  margin-top: 50px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+ 
+}
+.submitButton {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.description {
+  margin-top: 6px;
+  font-size:17px;
+margin-left:10px;
+font-family:Arial, Helvetica, sans-serif;
+  font-weight: 10px;
+  color:rgb(136, 165, 204);
+}
+
+
+/* Adjusting for smaller screens (300px to 600px) */
+
+.contactHeading{
+  font-family: sans-serif;
+  margin-left:102px;
+  color:cyan;
+text-transform: uppercase;
+margin-top:30px;
+font-weight:400;
+font-size:18px;
+  
+}
+
+.interior{
+  color:rgb(172, 65, 145);
+  font-size: 20px;
+}
+.submitButton:hover {
+  background-color: #943e99;
+  box-shadow: 0 4px 5px 0 #21528a;
+
+  font-family: font-serif;
+  border:1px solid rgb(6, 114, 254)
+}
+@media (max-width: 800px) {
+  .description {
+    font-size: 16px;
+   margin-left: 4px;  /* Increase margin on the left */
+    margin-right: 5px; /* Adjust margin */
+  }
+
+  .contactHeading {
+    font-size: 20px;
+    margin-left: 80px;
+    margin-top: 25px;
+  }
+}
+
+/* Adjustments for very small screens (600px) */
+@media (max-width: 600px) {
+  .description {
+   margin-left: 5px;  /* Larger left margin */
+    margin-right: 5px;
+  }
+
+  .contactHeading {
+    font-size: 18px;
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+}
+
+/* Adjustments for even smaller screens (500px) */
+@media (max-width: 500px) {
+  .description {
+    margin-left: 5px;  /* Even larger left margin */
+    margin-right: 15px; 
+  }
+
+  .contactHeading {
+    font-size: 16px;
+    margin-left: 60px;
+    margin-top: 20px;
+  }
+}
+
+/* Adjustments for very small screens (300px) */
+@media (max-width: 300px) {
+  .description {
+  margin-left: 5px;  /* Very large left margin */
+    margin-right: 10px;
+  }
+
+  .contactHeading {
+    font-size: 14px;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+}
+
+.successMessage {
+  color: rgb(55, 180, 211);
+  margin-bottom: 1rem;
+  font-size:15px;
+}
+
+.text h2 {
+  margin-bottom: 0.5rem;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.text h2 {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.text p {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  gap: 26px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.link a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column;
+    gap: 23px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links {
+    align-items: center;
+  }
+}
+
+/* Style for input and textarea */
+.inputName, .inputEmail, .inputMessage {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #f0f8ff; /* Light background color */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Change background color when focused */
+
+.inputName, .inputEmail, .inputMessage {
+   background-color: #1f2d7f;
+   border:1px solid rgb(8, 115, 247);
+   color:white;
+}
+
+/* Responsive adjustments for smaller screen sizes */
+@media (max-width: 800px) {
+  .formContainer {
+    display: flex;
+    flex-direction: column;  /* Stack the form fields vertically */
+    align-items: stretch;    /* Ensure fields stretch to container's width */
+    gap: 15px;               /* Space between fields */
+  }
+
+  .inputName, .inputEmail, .inputMessage {
+    width: 100%;  /* Ensure they don't overflow the form container */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+}
+
+/* Adjustments for even smaller screens (600px) */
+@media (max-width: 600px) {
+  .inputName, .inputEmail, .inputMessage {
+    width: 100%;
+  }
+}
+
+/* Adjustments for very small screens (500px) */
+@media (max-width: 500px) {
+  .inputName, .inputEmail, .inputMessage {
+    width: 100%;
+  }
+}
+
+/* Adjustments for very small screens (300px) */
+@media (max-width: 300px) {
+  .inputName, .inputEmail, .inputMessage {
+    width: 100%;
+  }
+}
+
+.linkimg{
+
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  border:1px solid rgb(177, 13, 177);
+  height: 80px;
+}
+
+.linkimg:hover{
+  border:2px solid rgb(92, 193, 236);
+}
+.attributes{
+  
+  font-size:4px;
+  font-family:font-serif;
+
+
+}
+
+.last{
+  color:rgb(69, 153, 217);
+  font-size:20px;
+ margin-right:1px;
+  align-self: flex-end;
+  margin:40px;
+  display:flex;
+
+    justify-content: right;
+}
