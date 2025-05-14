@@ -82,7 +82,7 @@
   align-items: center;
   gap: 17px;
   background: #19376d;
-  background: linear-gradient(90deg, #5b1d4d 0%, rgba(72, 27, 114, 0) 100%);
+  background: linear-gradient(90deg, #4d1d5b 0%, rgba(72, 27, 114, 0) 100%);
   border-radius: 10px;
  
   padding: 24px;
@@ -118,7 +118,7 @@
   list-style-position: inside;
   font-size: 15px;
   list-style-type: disc;
-  color:rgb(85, 198, 254);
+  color:rgb(68, 159, 205);
   margin-left: 17px;
 }
 
