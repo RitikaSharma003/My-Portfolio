@@ -2,19 +2,30 @@
   {
     "role": "Web Development Intern",
     "organisation": "The Spark Foundation",
-    "startDate": "May, 2023",
-    "endDate": "June,2023",
-    "experiences": ["Developed responsive web pages using HTML and CSS, ensuring cross-device compatibility.",
+    "startDate": "March, 2025",
+    "endDate": "April,2025",
+    "experiences": [
+      "Developed responsive web pages using HTML and CSS, ensuring cross-device compatibility.",
       "Implemented dynamic behaviors using JavaScript.",
-      "Utilized PHP to handle backend operations like  user data processing, and server-side logic."]
-  
+      "Utilized PHP to handle backend operations like  user data processing, and server-side logic."
+    ]
+  },
+  {
+    "role": "Web Development Freelancing",
+    "startDate": "June, 2025",
+    "endDate": "Currently working",
+    "experiences": [
+      "Actively engaged in Freelance Frontend Web Development, specializing in building dynamic and user-friendly interfaces. Proficient in Next.js, HTML, CSS, and JavaScript with experience utilizing Chakra UI for efficient component development."
+    ]
   },
   {
     "role": "Web Development Intern",
     "organisation": "AICTE IBM Skills  Build",
     "startDate": "June, 2023",
     "endDate": "July, 2023",
-    "experiences": ["Developed fully responsive single-page applications (SPAs) using React.js, focusing on smooth user experience and component-based architecture.",
-      "Utilized React Hooks (useState, useEffect) for efficient state and lifecycle management."]
+    "experiences": [
+      "Developed fully responsive single-page applications (SPAs) using React.js, focusing on smooth user experience and component-based architecture.",
+      "Utilized React Hooks (useState, useEffect) for efficient state and lifecycle management."
+    ]
   }
 ]
