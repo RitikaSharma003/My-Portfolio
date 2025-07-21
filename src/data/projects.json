@@ -2,26 +2,34 @@
   {
     "title": "IMDB Clone",
     "imageSrc": "projects/imdb.png",
-    "description":" An IMDb clone website using a combination of HTML, CSS, and React.js. This project leveraging technologies,successfully replicated the core functionality, gaining valuable experience in front-end web development. A user-friendly and responsive interface."
- ,
-    "skills": ["React", "HTML","Bootstrap" ,"Javascipt"],
+    "description": " An IMDb clone website using a combination of HTML, CSS, and React.js. This project leveraging technologies,successfully replicated the core functionality, gaining valuable experience in front-end web development. A user-friendly and responsive interface.",
+    "skills": ["React", "HTML", "Bootstrap", "Javascipt"],
     "demo": "https://ritikasharmaimdb.netlify.app/",
     "source": "https://github.com/RitikaSharma003/Imdb-Clone-Website"
   },
+
   {
     "title": "Video-Pi",
     "imageSrc": "projects/videopi.png",
-    "description":"Developed VideoPi using React.js, Material-UI, HTML, CSS, GitHub (Version Control YouTube’s API for contet presentation and data retrieval. Leveraged YouTube's API for seamless content presentation, data retrieval, and user interaction, enabling a familiar and intuitive video viewing experience.",
+    "description": "Developed VideoPi using React.js, Material-UI, HTML, CSS, GitHub (Version Control YouTube’s API for contet presentation and data retrieval. Leveraged YouTube's API for seamless content presentation, data retrieval, and user interaction, enabling a familiar and intuitive video viewing experience.",
     "skills": ["React", "Git Hub", "You Tube's API", "Material-UI"],
     "demo": "https://videopiritika.netlify.app/",
     "source": "https://github.com/RitikaSharma003/Video-Pi"
   },
   {
+    "title": "WorldAtlas",
+    "imageSrc": "projects/worldatlas.png",
+    "description": "Developed an interactive web application crafted with React JS, provide users with a comprehensive way to explore countries around the globe.This project leverages React's component-based architecture to deliver a dynamic and responsive user experience.",
+
+    "skills": ["React", "Javascript"],
+    "source": "https://github.com/RitikaSharma003/World_Atlas"
+  },
+  {
     "title": " My Portfolio",
     "imageSrc": "projects/myportfolio.png",
     "description": "Developed a refined and aesthetically pleasing portfolio with HTML, CSS, and React.js, thoughtfully structured to convey the breadth of my skills and depth of my experience. providing a comprehensive overview of my expertise and achievements.",
-    "skills": ["React","Javascript"],
-    "demo":"https://ritikasharma-portfoliowebsite.netlify.app/",
+    "skills": ["React", "Javascript"],
+    "demo": "https://ritikasharma-portfoliowebsite.netlify.app/",
     "source": "https://github.com/RitikaSharma003/My-Portfolio"
   }
 ]
