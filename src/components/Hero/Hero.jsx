@@ -11,7 +11,7 @@ export const Hero = () => {
           Hi, I'm Ritika Sharma
         </h1>
         <p className={styles.description}>
-          A Passionate Web Developer and Software Developer.
+          A Passionate Web Developer and Software Engineer.
         </p>
         <a
           href="/public/Resume Ritika Sharma.pdf"
