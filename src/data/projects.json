@@ -17,12 +17,12 @@
     "source": "https://github.com/RitikaSharma003/Video-Pi"
   },
   {
-    "title": "WorldAtlas",
-    "imageSrc": "projects/worldatlas.png",
-    "description": "Developed an interactive web application crafted with React JS, provide users with a comprehensive way to explore countries around the globe.This project leverages React's component-based architecture to deliver a dynamic and responsive user experience.",
-
-    "skills": ["React", "Javascript"],
-    "source": "https://github.com/RitikaSharma003/World_Atlas"
+    "title": "CourseSphere",
+    "imageSrc": "",
+    "description": "Developed a full-stack e-learning platform with React.js and a Node.js/Express RESTful API, enabling secure user and admin authentication via JWT. Integrated third-party APIs,including Stripe for secure payments and Cloudinary for media storage, to handle key e-commerce and content management functionalities. Managed scalable user and course data using MongoDB Atlas, with a focus on optimizing database queries and building a responsive, dynamic user interface.",
+    "skills": ["React", "Javascript", "Node Js", "Stripe"],
+    "demo": "https://course-sphere-indol.vercel.app/",
+    "source": "https://github.com/RitikaSharma003/CourseSphere- "
   },
   {
     "title": " My Portfolio",
