@@ -2,7 +2,7 @@
   {
     "title": "CourseSphere",
     "imageSrc": "projects/CourseSphere.png",
-    "description": "Developed a full-stack e-learning platform with React.js and a Node.js/Express RESTful API, enabling secure user and admin authentication via JWT. Integrated third-party APIs,including Stripe for secure payments and Cloudinary for media storage, to handle key e-commerce and content management functionalities. Managed scalable user and course data using MongoDB Atlas, with a focus on optimizing database queries and building a responsive, dynamic user interface.",
+    "description": "Built a full-stack e-learning platform (React.js and a Node.js/Express RESTful API) with secure JWT-based user/admin authentication.Seamlessly integrated Stripe and Cloudinary APIs for e-commerce and scalable media management.",
     "skills": ["React", "Javascript", "Node Js", "Stripe"],
     "demo": "https://course-sphere-indol.vercel.app/",
     "source": "https://github.com/RitikaSharma003/CourseSphere- "
