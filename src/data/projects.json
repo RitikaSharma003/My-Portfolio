@@ -1,5 +1,13 @@
 [
   {
+    "title": "CourseSphere",
+    "imageSrc": "projects/CourseSphere.png",
+    "description": "Developed a full-stack e-learning platform with React.js and a Node.js/Express RESTful API, enabling secure user and admin authentication via JWT. Integrated third-party APIs,including Stripe for secure payments and Cloudinary for media storage, to handle key e-commerce and content management functionalities. Managed scalable user and course data using MongoDB Atlas, with a focus on optimizing database queries and building a responsive, dynamic user interface.",
+    "skills": ["React", "Javascript", "Node Js", "Stripe"],
+    "demo": "https://course-sphere-indol.vercel.app/",
+    "source": "https://github.com/RitikaSharma003/CourseSphere- "
+  },
+  {
     "title": "IMDB Clone",
     "imageSrc": "projects/imdb.png",
     "description": " An IMDb clone website using a combination of HTML, CSS, and React.js. This project leveraging technologies,successfully replicated the core functionality, gaining valuable experience in front-end web development. A user-friendly and responsive interface.",
@@ -16,14 +24,7 @@
     "demo": "https://videopiritika.netlify.app/",
     "source": "https://github.com/RitikaSharma003/Video-Pi"
   },
-  {
-    "title": "CourseSphere",
-    "imageSrc": "pr",
-    "description": "Developed a full-stack e-learning platform with React.js and a Node.js/Express RESTful API, enabling secure user and admin authentication via JWT. Integrated third-party APIs,including Stripe for secure payments and Cloudinary for media storage, to handle key e-commerce and content management functionalities. Managed scalable user and course data using MongoDB Atlas, with a focus on optimizing database queries and building a responsive, dynamic user interface.",
-    "skills": ["React", "Javascript", "Node Js", "Stripe"],
-    "demo": "https://course-sphere-indol.vercel.app/",
-    "source": "https://github.com/RitikaSharma003/CourseSphere- "
-  },
+
   {
     "title": " My Portfolio",
     "imageSrc": "projects/myportfolio.png",
