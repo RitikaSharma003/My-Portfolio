@@ -4,15 +4,16 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
         primary: "#6C63FF",
         secondary: "#FF6584",
         accent: "#43D9AD",
-        dark: "#0F0F1A",
-        "dark-card": "#1A1A2E",
-        "dark-border": "#2A2A45",
+        dark: "rgb(var(--color-dark) / <alpha-value>)",
+        "dark-card": "rgb(var(--color-dark-card) / <alpha-value>)",
+        "dark-border": "rgb(var(--color-dark-border) / <alpha-value>)",
       },
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],

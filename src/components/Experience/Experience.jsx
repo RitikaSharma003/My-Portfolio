@@ -33,7 +33,7 @@ export const Experience = () => {
           <span className="text-[#43D9AD] font-semibold text-sm tracking-widest uppercase mb-3 block">
             My Background
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
             Skills &{" "}
             <span className="bg-gradient-to-r from-[#43D9AD] to-[#6C63FF] bg-clip-text text-transparent">
               Experience
@@ -50,7 +50,7 @@ export const Experience = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
+            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
               <span className="w-6 h-0.5 bg-[#6C63FF] rounded-full" />
               Technical Skills
             </h3>
@@ -63,14 +63,14 @@ export const Experience = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: id * 0.05 }}
                   whileHover={{ scale: 1.05, y: -5 }}
-                  className="group flex flex-col items-center gap-3 bg-[#1A1A2E]/70 border border-[#2A2A45] rounded-xl p-4 hover:border-[#6C63FF]/50 hover:bg-[#6C63FF]/10 shadow-lg cursor-pointer"
+                  className="group flex flex-col items-center gap-3 bg-dark-card/70 border border-dark-border rounded-xl p-4 hover:border-[#6C63FF]/50 hover:bg-[#6C63FF]/10 shadow-lg cursor-pointer"
                 >
                   <img
                     src={getImageUrl(skill.imageSrc)}
                     alt={skill.title}
                     className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-300"
                   />
-                  <span className="text-slate-400 text-[11px] uppercase tracking-wider text-center font-semibold group-hover:text-white transition-colors duration-200">
+                  <span className="text-slate-500 dark:text-slate-400 text-[11px] uppercase tracking-wider text-center font-semibold group-hover:text-slate-900 dark:text-white transition-colors duration-200">
                     {skill.title}
                   </span>
                 </motion.div>
@@ -85,7 +85,7 @@ export const Experience = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
+            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
               <span className="w-6 h-0.5 bg-[#43D9AD] rounded-full" />
               Work Experience
             </h3>
@@ -110,12 +110,12 @@ export const Experience = () => {
                     className="relative group"
                   >
                     {/* Timeline dot */}
-                    <div className="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-[#0F0F1A] border-2 border-[#6C63FF] group-hover:border-[#43D9AD] group-hover:bg-[#43D9AD] transition-colors duration-300 shadow-lg shadow-[#6C63FF]/40" />
+                    <div className="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-dark border-2 border-[#6C63FF] group-hover:border-[#43D9AD] group-hover:bg-[#43D9AD] transition-colors duration-300 shadow-lg shadow-[#6C63FF]/40" />
 
-                    <div className="bg-[#1A1A2E]/70 border border-[#2A2A45] rounded-2xl p-6 hover:border-[#6C63FF]/40 transition-all duration-300 shadow-xl group-hover:-translate-y-1">
+                    <div className="bg-dark-card/70 border border-dark-border rounded-2xl p-6 hover:border-[#6C63FF]/40 transition-all duration-300 shadow-xl group-hover:-translate-y-1">
                       <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
                         <div>
-                          <h4 className="text-white font-bold text-lg leading-tight">
+                          <h4 className="text-slate-900 dark:text-white font-bold text-lg leading-tight">
                             {item.role}
                           </h4>
                           {item.organisation && (
@@ -130,7 +130,7 @@ export const Experience = () => {
                       </div>
                       <ul className="space-y-2.5">
                         {item.experiences.map((exp, eid) => (
-                          <li key={eid} className="flex items-start gap-3 text-slate-400 text-sm leading-relaxed">
+                          <li key={eid} className="flex items-start gap-3 text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
                             <span className="mt-1.5 flex-shrink-0 w-1.5 h-1.5 bg-[#43D9AD]/60 rounded-full" />
                             {exp}
                           </li>

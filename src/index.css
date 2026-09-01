@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-dark: 248 250 252;
+    --color-dark-card: 255 255 255;
+    --color-dark-border: 226 232 240;
+    --color-text: 15 23 42;
+  }
+  .dark {
+    /* Lighter dark mode colors than before */
+    --color-dark: 30 30 47;
+    --color-dark-card: 37 37 58;
+    --color-dark-border: 52 52 80;
+    --color-text: 241 245 249;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,8 +30,8 @@ html {
 
 body {
   font-family: "Outfit", Arial, sans-serif;
-  background-color: #0F0F1A;
-  color: #e2e8f0;
+  background-color: rgb(var(--color-dark));
+  color: rgb(var(--color-text));
 }
 
 @keyframes float {

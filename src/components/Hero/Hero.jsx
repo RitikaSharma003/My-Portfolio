@@ -25,7 +25,7 @@ export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Animated gradient background */}
-      <div className="absolute inset-0 bg-[#0F0F1A]">
+      <div className="absolute inset-0 bg-dark">
         <motion.div 
           animate={{ 
             scale: [1, 1.2, 1],
@@ -73,17 +73,17 @@ export const Hero = () => {
           </motion.div>
 
           <motion.h1 variants={itemVariants} className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4">
-            <span className="text-white">Hi, I'm </span>
+            <span className="text-slate-900 dark:text-white">Hi, I'm </span>
             <span className="bg-gradient-to-r from-[#6C63FF] via-[#FF6584] to-[#43D9AD] bg-clip-text text-transparent animate-gradient-x bg-300%">
               Ritika
             </span>
           </motion.h1>
 
-          <motion.h2 variants={itemVariants} className="text-2xl md:text-3xl font-semibold text-slate-300 mb-6">
+          <motion.h2 variants={itemVariants} className="text-2xl md:text-3xl font-semibold text-slate-600 dark:text-slate-300 mb-6">
             <span className="text-[#43D9AD]">Frontend Developer</span> & Software Engineer
           </motion.h2>
 
-          <motion.p variants={itemVariants} className="text-slate-400 text-lg leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0">
+          <motion.p variants={itemVariants} className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0">
             Passionate about crafting beautiful, responsive, and user-focused web experiences using
             React, JavaScript, and modern web technologies.
           </motion.p>
@@ -94,7 +94,7 @@ export const Hero = () => {
               whileTap={{ scale: 0.95 }}
               href="/public/Resume Ritika Sharma.pdf"
               download
-              className="group relative inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl font-semibold text-white overflow-hidden"
+              className="group relative inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl font-semibold text-slate-900 dark:text-white overflow-hidden"
               style={{ background: "linear-gradient(135deg, #6C63FF, #8B85FF)" }}
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -132,9 +132,9 @@ export const Hero = () => {
           <motion.div
             animate={{ y: [-10, 10, -10] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-            className="relative w-full h-full p-2 bg-[#1A1A2E]/60 backdrop-blur-xl border border-white/10 rounded-[3rem] shadow-2xl"
+            className="relative w-full h-full p-2 bg-dark-card/60 backdrop-blur-xl border border-white/10 rounded-[3rem] shadow-2xl"
           >
-            <div className="w-full h-full overflow-hidden rounded-[2.5rem] bg-[#0F0F1A]">
+            <div className="w-full h-full overflow-hidden rounded-[2.5rem] bg-dark">
               <img
                 src={getImageUrl("hero/heroImage.png")}
                 alt="Ritika Sharma"
@@ -147,28 +147,28 @@ export const Hero = () => {
           <motion.div
             animate={{ y: [-8, 8, -8] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-            className="absolute top-12 -left-6 md:-left-10 bg-[#1A1A2E]/90 backdrop-blur-md border border-[#6C63FF]/40 rounded-2xl px-4 py-3 shadow-xl flex items-center gap-2"
+            className="absolute top-12 -left-6 md:-left-10 bg-dark-card/90 backdrop-blur-md border border-[#6C63FF]/40 rounded-2xl px-4 py-3 shadow-xl flex items-center gap-2"
           >
             <span className="w-2 h-2 rounded-full bg-[#6C63FF] animate-pulse" />
-            <span className="text-sm font-bold text-white">React.js</span>
+            <span className="text-sm font-bold text-slate-900 dark:text-white">React.js</span>
           </motion.div>
 
           <motion.div
             animate={{ y: [8, -8, 8] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-            className="absolute bottom-24 -right-6 md:-right-10 bg-[#1A1A2E]/90 backdrop-blur-md border border-[#43D9AD]/40 rounded-2xl px-4 py-3 shadow-xl flex items-center gap-2"
+            className="absolute bottom-24 -right-6 md:-right-10 bg-dark-card/90 backdrop-blur-md border border-[#43D9AD]/40 rounded-2xl px-4 py-3 shadow-xl flex items-center gap-2"
           >
             <span className="w-2 h-2 rounded-full bg-[#43D9AD] animate-pulse" />
-            <span className="text-sm font-bold text-white">Tailwind</span>
+            <span className="text-sm font-bold text-slate-900 dark:text-white">Tailwind</span>
           </motion.div>
 
           <motion.div
             animate={{ y: [-6, 6, -6] }}
             transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-            className="absolute -bottom-6 left-12 bg-[#1A1A2E]/90 backdrop-blur-md border border-[#FF6584]/40 rounded-2xl px-4 py-3 shadow-xl flex items-center gap-2 z-10"
+            className="absolute -bottom-6 left-12 bg-dark-card/90 backdrop-blur-md border border-[#FF6584]/40 rounded-2xl px-4 py-3 shadow-xl flex items-center gap-2 z-10"
           >
             <span className="w-2 h-2 rounded-full bg-[#FF6584] animate-pulse" />
-            <span className="text-sm font-bold text-white">Next.js</span>
+            <span className="text-sm font-bold text-slate-900 dark:text-white">Next.js</span>
           </motion.div>
         </motion.div>
       </motion.div>

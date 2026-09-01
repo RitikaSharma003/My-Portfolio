@@ -71,7 +71,7 @@ export const About = () => {
           <span className="text-[#6C63FF] font-semibold text-sm tracking-widest uppercase mb-3 block">
             Who am I?
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
             About{" "}
             <span className="bg-gradient-to-r from-[#6C63FF] to-[#43D9AD] bg-clip-text text-transparent">
               Me
@@ -88,22 +88,22 @@ export const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-[#1A1A2E]/60 border border-[#2A2A45] rounded-3xl p-8 backdrop-blur-sm hover:border-[#6C63FF]/40 transition-colors duration-500 shadow-xl"
+              className="bg-dark-card/60 border border-dark-border rounded-3xl p-8 backdrop-blur-sm hover:border-[#6C63FF]/40 transition-colors duration-500 shadow-xl"
             >
-              <p className="text-slate-300 leading-relaxed text-base">
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-base">
                 I'm <span className="text-[#6C63FF] font-bold text-lg">Ritika Sharma</span>, a
                 Frontend-focused Software Engineer with hands-on experience building production
-                {" "}<span className="text-white font-semibold">React.js / Next.js</span> applications
+                {" "}<span className="text-slate-900 dark:text-white font-semibold">React.js / Next.js</span> applications
                 and a strong Data Structures & Algorithms foundation (
                 <span className="text-[#43D9AD] font-semibold">200+ LeetCode problems solved</span>).
               </p>
-              <p className="text-slate-300 leading-relaxed text-base mt-4">
-                Skilled across the <span className="text-white font-semibold">MERN stack</span>, with a
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-base mt-4">
+                Skilled across the <span className="text-slate-900 dark:text-white font-semibold">MERN stack</span>, with a
                 track record of shipping performant, scalable, user-facing features. I hold a{" "}
-                <span className="text-white font-semibold">B.Tech in Computer Science (GPA: 8.41/10)</span>{" "}
+                <span className="text-slate-900 dark:text-white font-semibold">B.Tech in Computer Science (GPA: 8.41/10)</span>{" "}
                 from ABES Engineering College, Ghaziabad.
               </p>
-              <p className="text-slate-300 leading-relaxed text-base mt-4">
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-base mt-4">
                 Beyond code, I enjoy travelling, exploring nature, playing badminton, and giving back to the community.
                 I aim to build{" "}
                 <span className="text-[#43D9AD] font-semibold">impactful digital experiences</span> that
@@ -125,12 +125,12 @@ export const About = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: 0.2 + (i * 0.1) }}
                   whileHover={{ y: -5 }}
-                  className="bg-[#1A1A2E]/60 border border-[#2A2A45] rounded-2xl p-5 text-center hover:border-[#6C63FF]/40 transition-colors duration-300 shadow-lg"
+                  className="bg-dark-card/60 border border-dark-border rounded-2xl p-5 text-center hover:border-[#6C63FF]/40 transition-colors duration-300 shadow-lg"
                 >
                   <div className="text-3xl font-black bg-gradient-to-r from-[#6C63FF] to-[#43D9AD] bg-clip-text text-transparent mb-1">
                     {stat.value}
                   </div>
-                  <div className="text-slate-400 text-xs font-semibold tracking-wider uppercase">{stat.label}</div>
+                  <div className="text-slate-500 dark:text-slate-400 text-xs font-semibold tracking-wider uppercase">{stat.label}</div>
                 </motion.div>
               ))}
             </div>
@@ -141,15 +141,15 @@ export const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="bg-[#1A1A2E]/60 border border-[#2A2A45] rounded-3xl p-7 hover:border-[#43D9AD]/40 transition-colors duration-300 shadow-xl"
+              className="bg-dark-card/60 border border-dark-border rounded-3xl p-7 hover:border-[#43D9AD]/40 transition-colors duration-300 shadow-xl"
             >
-              <h3 className="text-white font-bold text-lg mb-5 flex items-center gap-3">
+              <h3 className="text-slate-900 dark:text-white font-bold text-lg mb-5 flex items-center gap-3">
                 <span className="w-8 h-1 bg-gradient-to-r from-[#43D9AD] to-transparent rounded-full" />
                 Achievements
               </h3>
               <ul className="space-y-3">
                 {achievements.map((a, i) => (
-                  <li key={i} className="flex items-start gap-3 text-slate-300 text-sm font-medium">
+                  <li key={i} className="flex items-start gap-3 text-slate-600 dark:text-slate-300 text-sm font-medium">
                     <svg className="flex-shrink-0 w-5 h-5 text-[#43D9AD]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
                     {a}
                   </li>
@@ -168,7 +168,7 @@ export const About = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.15 }}
                 whileHover={{ scale: 1.02 }}
-                className={`group bg-[#1A1A2E]/60 border ${trait.border} rounded-3xl p-6 backdrop-blur-sm transition-all duration-300 hover:shadow-2xl ${trait.glow} cursor-default`}
+                className={`group bg-dark-card/60 border ${trait.border} rounded-3xl p-6 backdrop-blur-sm transition-all duration-300 hover:shadow-2xl ${trait.glow} cursor-default`}
               >
                 <div className="flex items-start gap-5">
                   <div
@@ -177,10 +177,10 @@ export const About = () => {
                     {trait.icon}
                   </div>
                   <div>
-                    <h3 className="text-white font-bold text-xl mb-2 group-hover:text-[#6C63FF] transition-colors duration-200">
+                    <h3 className="text-slate-900 dark:text-white font-bold text-xl mb-2 group-hover:text-[#6C63FF] transition-colors duration-200">
                       {trait.title}
                     </h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">{trait.desc}</p>
+                    <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">{trait.desc}</p>
                   </div>
                 </div>
               </motion.div>
@@ -192,20 +192,20 @@ export const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="bg-[#1A1A2E]/60 border border-[#2A2A45] rounded-3xl p-7 hover:border-[#6C63FF]/40 transition-colors duration-300 shadow-xl mt-8"
+              className="bg-dark-card/60 border border-dark-border rounded-3xl p-7 hover:border-[#6C63FF]/40 transition-colors duration-300 shadow-xl mt-8"
             >
-              <h3 className="text-white font-bold text-lg mb-5 flex items-center gap-3">
+              <h3 className="text-slate-900 dark:text-white font-bold text-lg mb-5 flex items-center gap-3">
                 <span className="w-8 h-1 bg-gradient-to-r from-[#6C63FF] to-transparent rounded-full" />
                 Education
               </h3>
               <div className="space-y-4">
-                <div className="bg-[#0F0F1A]/50 p-4 rounded-2xl border border-[#2A2A45]">
-                  <p className="text-white font-bold">B.Tech — Computer Science</p>
+                <div className="bg-dark/50 p-4 rounded-2xl border border-dark-border">
+                  <p className="text-slate-900 dark:text-white font-bold">B.Tech — Computer Science</p>
                   <p className="text-[#6C63FF] text-sm font-medium mt-1">ABES Engineering College, Ghaziabad</p>
                   <p className="text-slate-500 text-xs mt-2 font-semibold tracking-wide uppercase">July 2020 – Aug 2024 · GPA: 8.41 / 10</p>
                 </div>
-                <div className="bg-[#0F0F1A]/50 p-4 rounded-2xl border border-[#2A2A45]">
-                  <p className="text-white font-bold">Class XII (92.4%) & Class X (92.6%)</p>
+                <div className="bg-dark/50 p-4 rounded-2xl border border-dark-border">
+                  <p className="text-slate-900 dark:text-white font-bold">Class XII (92.4%) & Class X (92.6%)</p>
                   <p className="text-[#43D9AD] text-sm font-medium mt-1">BloomingDale School, Budaun</p>
                   <p className="text-slate-500 text-xs mt-2 font-semibold tracking-wide uppercase">2018 – 2020</p>
                 </div>

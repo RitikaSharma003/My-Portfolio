@@ -27,7 +27,7 @@ const socialLinks = [
   {
     href: "https://github.com/RitikaSharma003",
     label: "GitHub",
-    color: "hover:border-white/40 hover:text-white hover:bg-white/10",
+    color: "hover:border-white/40 hover:text-slate-900 dark:text-white hover:bg-white/10",
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
         <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
@@ -90,14 +90,14 @@ export const Contact = () => {
           <span className="text-[#6C63FF] font-semibold text-sm tracking-widest uppercase mb-3 block">
             Let's Talk
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
             Contact{" "}
             <span className="bg-gradient-to-r from-[#6C63FF] to-[#43D9AD] bg-clip-text text-transparent">
               Me
             </span>
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-[#6C63FF] to-[#43D9AD] rounded-full mx-auto mb-6" />
-          <p className="text-slate-400 max-w-xl mx-auto leading-relaxed">
+          <p className="text-slate-500 dark:text-slate-400 max-w-xl mx-auto leading-relaxed">
             Feel free to reach out if you'd like to collaborate — you're just a few clicks away!
           </p>
         </motion.div>
@@ -109,9 +109,9 @@ export const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-[#1A1A2E]/80 border border-[#2A2A45] rounded-3xl p-8 backdrop-blur-md shadow-2xl"
+            className="bg-dark-card/80 border border-dark-border rounded-3xl p-8 backdrop-blur-md shadow-2xl"
           >
-            <h3 className="text-white font-bold text-xl mb-6 flex items-center gap-3">
+            <h3 className="text-slate-900 dark:text-white font-bold text-xl mb-6 flex items-center gap-3">
               <span className="w-8 h-1 bg-[#6C63FF] rounded-full" />
               Get In Touch
             </h3>
@@ -129,7 +129,7 @@ export const Contact = () => {
 
             <form ref={form} onSubmit={sendEmail} className="space-y-5">
               <div>
-                <label className="block text-slate-300 text-sm mb-2 font-semibold">Your Name</label>
+                <label className="block text-slate-600 dark:text-slate-300 text-sm mb-2 font-semibold">Your Name</label>
                 <input
                   type="text"
                   name="from_name"
@@ -137,11 +137,11 @@ export const Contact = () => {
                   required
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full bg-[#0F0F1A] border border-[#2A2A45] rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-[#6C63FF] focus:ring-1 focus:ring-[#6C63FF] transition-all duration-300 text-sm"
+                  className="w-full bg-dark border border-dark-border rounded-xl px-4 py-3.5 text-slate-900 dark:text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:border-[#6C63FF] focus:ring-1 focus:ring-[#6C63FF] transition-all duration-300 text-sm"
                 />
               </div>
               <div>
-                <label className="block text-slate-300 text-sm mb-2 font-semibold">Your Email</label>
+                <label className="block text-slate-600 dark:text-slate-300 text-sm mb-2 font-semibold">Your Email</label>
                 <input
                   type="email"
                   name="from_email"
@@ -149,11 +149,11 @@ export const Contact = () => {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-[#0F0F1A] border border-[#2A2A45] rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-[#6C63FF] focus:ring-1 focus:ring-[#6C63FF] transition-all duration-300 text-sm"
+                  className="w-full bg-dark border border-dark-border rounded-xl px-4 py-3.5 text-slate-900 dark:text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:border-[#6C63FF] focus:ring-1 focus:ring-[#6C63FF] transition-all duration-300 text-sm"
                 />
               </div>
               <div>
-                <label className="block text-slate-300 text-sm mb-2 font-semibold">Message</label>
+                <label className="block text-slate-600 dark:text-slate-300 text-sm mb-2 font-semibold">Message</label>
                 <textarea
                   name="message"
                   rows={5}
@@ -161,7 +161,7 @@ export const Contact = () => {
                   required
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  className="w-full bg-[#0F0F1A] border border-[#2A2A45] rounded-xl px-4 py-3.5 text-white placeholder-slate-600 focus:outline-none focus:border-[#6C63FF] focus:ring-1 focus:ring-[#6C63FF] transition-all duration-300 text-sm resize-none"
+                  className="w-full bg-dark border border-dark-border rounded-xl px-4 py-3.5 text-slate-900 dark:text-slate-900 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:border-[#6C63FF] focus:ring-1 focus:ring-[#6C63FF] transition-all duration-300 text-sm resize-none"
                 />
               </div>
               <motion.button
@@ -199,9 +199,9 @@ export const Contact = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-6"
           >
-            <div className="bg-[#1A1A2E]/80 border border-[#2A2A45] rounded-3xl p-8 backdrop-blur-md shadow-2xl">
-              <h3 className="text-white font-bold text-xl mb-3">Let's Connect</h3>
-              <p className="text-slate-400 text-sm mb-6 leading-relaxed">
+            <div className="bg-dark-card/80 border border-dark-border rounded-3xl p-8 backdrop-blur-md shadow-2xl">
+              <h3 className="text-slate-900 dark:text-white font-bold text-xl mb-3">Let's Connect</h3>
+              <p className="text-slate-500 dark:text-slate-400 text-sm mb-6 leading-relaxed">
                 I'm always open to new opportunities, collaborations, and interesting conversations. 
                 Reach out through any of the platforms below.
               </p>
@@ -216,7 +216,7 @@ export const Contact = () => {
                     href={social.href}
                     target="_blank"
                     rel="noreferrer"
-                    className={`flex items-center gap-4 p-4 bg-[#0F0F1A] border border-[#2A2A45] rounded-2xl text-slate-400 transition-all duration-300 group ${social.color} shadow-md`}
+                    className={`flex items-center gap-4 p-4 bg-dark border border-dark-border rounded-2xl text-slate-500 dark:text-slate-400 transition-all duration-300 group ${social.color} shadow-md`}
                   >
                     <div className="flex-shrink-0 group-hover:scale-110 transition-transform duration-300">{social.icon}</div>
                     <span className="font-bold text-sm tracking-wide">{social.label}</span>
@@ -239,7 +239,7 @@ export const Contact = () => {
               <svg className="w-10 h-10 text-[#6C63FF] mx-auto mb-4 opacity-50" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
               </svg>
-              <p className="text-white text-base italic leading-relaxed font-medium">
+              <p className="text-slate-900 dark:text-white text-base italic leading-relaxed font-medium">
                 "Code is like humor. When you have to explain it, it's bad."
               </p>
               <p className="text-[#43D9AD] text-sm mt-3 font-bold tracking-widest uppercase">— Cory House</p>
@@ -249,7 +249,7 @@ export const Contact = () => {
       </div>
 
       {/* Footer */}
-      <div className="mt-24 border-t border-[#2A2A45] pt-10 pb-6">
+      <div className="mt-24 border-t border-dark-border pt-10 pb-6">
         <p className="text-center text-slate-500 text-sm font-medium">
           © 2025{" "}
           <span className="bg-gradient-to-r from-[#6C63FF] to-[#43D9AD] bg-clip-text text-transparent font-bold">
