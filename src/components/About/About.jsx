@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const traits = [
   {
@@ -48,15 +49,25 @@ const achievements = [
 
 export const About = () => {
   return (
-    <section id="about" className="py-24 relative">
+    <section id="about" className="py-24 relative overflow-hidden">
       {/* Background accent */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/2 -left-32 w-64 h-64 bg-[#6C63FF]/10 rounded-full blur-3xl" />
+      <div className="absolute inset-0 pointer-events-none">
+        <motion.div 
+          animate={{ x: [0, 30, 0], y: [0, -20, 0] }}
+          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute top-1/2 -left-32 w-80 h-80 bg-[#6C63FF]/10 rounded-full blur-[100px]" 
+        />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
           <span className="text-[#6C63FF] font-semibold text-sm tracking-widest uppercase mb-3 block">
             Who am I?
           </span>
@@ -67,112 +78,139 @@ export const About = () => {
             </span>
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-[#6C63FF] to-[#43D9AD] rounded-full mx-auto" />
-        </div>
+        </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Bio */}
-          <div className="space-y-5">
-            <div className="bg-[#1A1A2E]/60 border border-[#2A2A45] rounded-2xl p-8 backdrop-blur-sm hover:border-[#6C63FF]/40 transition-colors duration-300">
+          {/* Bio Column */}
+          <div className="space-y-6">
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-[#1A1A2E]/60 border border-[#2A2A45] rounded-3xl p-8 backdrop-blur-sm hover:border-[#6C63FF]/40 transition-colors duration-500 shadow-xl"
+            >
               <p className="text-slate-300 leading-relaxed text-base">
-                I'm <span className="text-[#6C63FF] font-semibold">Ritika Sharma</span>, a
+                I'm <span className="text-[#6C63FF] font-bold text-lg">Ritika Sharma</span>, a
                 Frontend-focused Software Engineer with hands-on experience building production
-                {" "}<span className="text-white font-medium">React.js / Next.js</span> applications
+                {" "}<span className="text-white font-semibold">React.js / Next.js</span> applications
                 and a strong Data Structures & Algorithms foundation (
                 <span className="text-[#43D9AD] font-semibold">200+ LeetCode problems solved</span>).
               </p>
               <p className="text-slate-300 leading-relaxed text-base mt-4">
-                Skilled across the <span className="text-white font-medium">MERN stack</span>, with a
+                Skilled across the <span className="text-white font-semibold">MERN stack</span>, with a
                 track record of shipping performant, scalable, user-facing features. I hold a{" "}
-                <span className="text-white font-medium">B.Tech in Computer Science (GPA: 8.41/10)</span>{" "}
+                <span className="text-white font-semibold">B.Tech in Computer Science (GPA: 8.41/10)</span>{" "}
                 from ABES Engineering College, Ghaziabad.
               </p>
               <p className="text-slate-300 leading-relaxed text-base mt-4">
                 Beyond code, I enjoy travelling, exploring nature, playing badminton, and giving back to the community.
                 I aim to build{" "}
-                <span className="text-[#43D9AD] font-medium">impactful digital experiences</span> that
+                <span className="text-[#43D9AD] font-semibold">impactful digital experiences</span> that
                 make a real difference.
               </p>
-            </div>
+            </motion.div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4">
               {[
                 { value: "8.41", label: "GPA" },
                 { value: "200+", label: "LeetCode" },
-                { value: "1yr", label: "Experiences" },
-              ].map((stat) => (
-                <div
+                { value: "3+", label: "Experiences" },
+              ].map((stat, i) => (
+                <motion.div
                   key={stat.label}
-                  className="bg-[#1A1A2E]/60 border border-[#2A2A45] rounded-xl p-4 text-center hover:border-[#6C63FF]/40 transition-colors duration-300"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.2 + (i * 0.1) }}
+                  whileHover={{ y: -5 }}
+                  className="bg-[#1A1A2E]/60 border border-[#2A2A45] rounded-2xl p-5 text-center hover:border-[#6C63FF]/40 transition-colors duration-300 shadow-lg"
                 >
-                  <div className="text-2xl font-bold bg-gradient-to-r from-[#6C63FF] to-[#43D9AD] bg-clip-text text-transparent">
+                  <div className="text-3xl font-black bg-gradient-to-r from-[#6C63FF] to-[#43D9AD] bg-clip-text text-transparent mb-1">
                     {stat.value}
                   </div>
-                  <div className="text-slate-400 text-xs mt-1">{stat.label}</div>
-                </div>
+                  <div className="text-slate-400 text-xs font-semibold tracking-wider uppercase">{stat.label}</div>
+                </motion.div>
               ))}
             </div>
 
             {/* Achievements */}
-            <div className="bg-[#1A1A2E]/60 border border-[#2A2A45] rounded-2xl p-6 hover:border-[#43D9AD]/40 transition-colors duration-300">
-              <h3 className="text-white font-semibold mb-4 flex items-center gap-2">
-                <span className="w-5 h-0.5 bg-[#43D9AD] rounded-full" />
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="bg-[#1A1A2E]/60 border border-[#2A2A45] rounded-3xl p-7 hover:border-[#43D9AD]/40 transition-colors duration-300 shadow-xl"
+            >
+              <h3 className="text-white font-bold text-lg mb-5 flex items-center gap-3">
+                <span className="w-8 h-1 bg-gradient-to-r from-[#43D9AD] to-transparent rounded-full" />
                 Achievements
               </h3>
-              <ul className="space-y-2">
+              <ul className="space-y-3">
                 {achievements.map((a, i) => (
-                  <li key={i} className="flex items-start gap-2 text-slate-400 text-sm">
-                    <span className="mt-1.5 flex-shrink-0 w-1.5 h-1.5 bg-[#43D9AD] rounded-full" />
+                  <li key={i} className="flex items-start gap-3 text-slate-300 text-sm font-medium">
+                    <svg className="flex-shrink-0 w-5 h-5 text-[#43D9AD]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
                     {a}
                   </li>
                 ))}
               </ul>
-            </div>
+            </motion.div>
           </div>
 
-          {/* Traits */}
-          <div className="grid gap-5">
-            {traits.map((trait) => (
-              <div
+          {/* Traits Column */}
+          <div className="space-y-5">
+            {traits.map((trait, i) => (
+              <motion.div
                 key={trait.title}
-                className={`group bg-[#1A1A2E]/60 border ${trait.border} rounded-2xl p-6 backdrop-blur-sm hover:border-opacity-70 transition-all duration-300 hover:shadow-xl ${trait.glow} cursor-default`}
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.15 }}
+                whileHover={{ scale: 1.02 }}
+                className={`group bg-[#1A1A2E]/60 border ${trait.border} rounded-3xl p-6 backdrop-blur-sm transition-all duration-300 hover:shadow-2xl ${trait.glow} cursor-default`}
               >
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-5">
                   <div
-                    className={`flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br ${trait.color} flex items-center justify-center text-white shadow-lg`}
+                    className={`flex-shrink-0 w-14 h-14 rounded-2xl bg-gradient-to-br ${trait.color} flex items-center justify-center text-white shadow-lg`}
                   >
                     {trait.icon}
                   </div>
                   <div>
-                    <h3 className="text-white font-semibold text-lg mb-1 group-hover:text-[#6C63FF] transition-colors duration-200">
+                    <h3 className="text-white font-bold text-xl mb-2 group-hover:text-[#6C63FF] transition-colors duration-200">
                       {trait.title}
                     </h3>
                     <p className="text-slate-400 text-sm leading-relaxed">{trait.desc}</p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
 
             {/* Education card */}
-            <div className="bg-[#1A1A2E]/60 border border-[#2A2A45] rounded-2xl p-6 hover:border-[#6C63FF]/40 transition-colors duration-300">
-              <h3 className="text-white font-semibold mb-4 flex items-center gap-2">
-                <span className="w-5 h-0.5 bg-[#6C63FF] rounded-full" />
+            <motion.div 
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="bg-[#1A1A2E]/60 border border-[#2A2A45] rounded-3xl p-7 hover:border-[#6C63FF]/40 transition-colors duration-300 shadow-xl mt-8"
+            >
+              <h3 className="text-white font-bold text-lg mb-5 flex items-center gap-3">
+                <span className="w-8 h-1 bg-gradient-to-r from-[#6C63FF] to-transparent rounded-full" />
                 Education
               </h3>
-              <div className="space-y-3">
-                <div>
-                  <p className="text-white text-sm font-medium">B.Tech — Computer Science</p>
-                  <p className="text-[#6C63FF] text-xs">ABES Engineering College, Ghaziabad</p>
-                  <p className="text-slate-500 text-xs">July 2020 – Aug 2024 · GPA: 8.41 / 10</p>
+              <div className="space-y-4">
+                <div className="bg-[#0F0F1A]/50 p-4 rounded-2xl border border-[#2A2A45]">
+                  <p className="text-white font-bold">B.Tech — Computer Science</p>
+                  <p className="text-[#6C63FF] text-sm font-medium mt-1">ABES Engineering College, Ghaziabad</p>
+                  <p className="text-slate-500 text-xs mt-2 font-semibold tracking-wide uppercase">July 2020 – Aug 2024 · GPA: 8.41 / 10</p>
                 </div>
-                <div className="h-px bg-[#2A2A45]" />
-                <div>
-                  <p className="text-white text-sm font-medium">Class XII — 92.4% · Class X — 92.6%</p>
-                  <p className="text-[#6C63FF] text-xs">BloomingDale School, Budaun</p>
-                  <p className="text-slate-500 text-xs">2018 – 2020</p>
+                <div className="bg-[#0F0F1A]/50 p-4 rounded-2xl border border-[#2A2A45]">
+                  <p className="text-white font-bold">Class XII (92.4%) & Class X (92.6%)</p>
+                  <p className="text-[#43D9AD] text-sm font-medium mt-1">BloomingDale School, Budaun</p>
+                  <p className="text-slate-500 text-xs mt-2 font-semibold tracking-wide uppercase">2018 – 2020</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
