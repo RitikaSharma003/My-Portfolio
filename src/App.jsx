@@ -1,4 +1,3 @@
-import styles from "./App.module.css";
 import { About } from "./components/About/About";
 import { Contact } from "./components/Contact/Contact";
 import { Experience } from "./components/Experience/Experience";
@@ -8,7 +7,7 @@ import { Projects } from "./components/Projects/Projects";
 
 function App() {
   return (
-    <div className={styles.App}>
+    <div className="min-h-screen bg-[#0F0F1A] text-slate-100 font-outfit overflow-x-hidden">
       <Navbar />
       <Hero />
       <About />

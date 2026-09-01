@@ -1,36 +1,34 @@
 [
   {
-    "title": "CourseSphere",
+    "title": "CourseSphere – LMS Platform",
     "imageSrc": "projects/CourseSphere.png",
-    "description": "Built a full-stack e-learning platform (React.js and a Node.js/Express RESTful API) with secure JWT-based user/admin authentication.Seamlessly integrated Integrated third-party APIs,including Stripe for secure payments and Cloudinary APIs for e-commerce and scalable media management.",
-    "skills": ["React", "Javascript", "Node Js", "Stripe"],
+    "description": "Architected a full-stack e-learning platform using the MERN stack, implementing JWT Authentication and Bcrypt for secure access control. Integrated Stripe API for secure payments and Cloudinary for optimized cloud-based media management. Designed data models in MongoDB Atlas to support scalable, complex user-course relationships.",
+    "skills": ["React", "Node.js", "MongoDB", "Stripe API", "JWT", "Cloudinary"],
     "demo": "https://course-sphere-indol.vercel.app/",
-    "source": "https://github.com/RitikaSharma003/CourseSphere- "
+    "source": "https://github.com/RitikaSharma003/CourseSphere-"
   },
   {
-    "title": "IMDB Clone",
+    "title": "IMDb Clone – Media Discovery App",
     "imageSrc": "projects/imdb.png",
-    "description": " An IMDb clone website using a combination of HTML, CSS, and React.js. This project leveraging technologies,successfully replicated the core functionality, gaining valuable experience in front-end web development. A user-friendly and responsive interface.",
-    "skills": ["React", "HTML", "Bootstrap", "Javascipt"],
+    "description": "Developed a high-fidelity media discovery application using React.js, leveraging hooks and state management for a modular codebase. Engineered real-time data sync by consuming RESTful APIs, featuring dynamic search and content filtering.",
+    "skills": ["React.js", "RESTful API", "JavaScript", "Bootstrap"],
     "demo": "https://ritikasharmaimdb.netlify.app/",
     "source": "https://github.com/RitikaSharma003/Imdb-Clone-Website"
   },
-
   {
-    "title": "Video-Pi",
+    "title": "Video-Pi – YouTube Clone",
     "imageSrc": "projects/videopi.png",
-    "description": "Developed VideoPi using React.js, Material-UI, HTML, CSS, GitHub (Version Control YouTube’s API for contet presentation and data retrieval. Leveraged YouTube's API for seamless content presentation, data retrieval, and user interaction, enabling a familiar and intuitive video viewing experience.",
-    "skills": ["React", "Git Hub", "You Tube's API", "Material-UI"],
+    "description": "Developed a YouTube-inspired video platform using React.js and Material-UI with YouTube's API for seamless content presentation, data retrieval, and user interaction, enabling a familiar and intuitive video viewing experience.",
+    "skills": ["React.js", "Material-UI", "YouTube API", "JavaScript"],
     "demo": "https://videopiritika.netlify.app/",
     "source": "https://github.com/RitikaSharma003/Video-Pi"
   },
-
   {
-    "title": " My Portfolio",
-    "imageSrc": "projects/myportfolio.png",
-    "description": "Developed a refined and aesthetically pleasing portfolio with HTML, CSS, and React.js, thoughtfully structured to convey the breadth of my skills and depth of my experience. providing a comprehensive overview of my expertise and achievements.",
-    "skills": ["React", "Javascript"],
-    "demo": "https://ritikasharma-portfoliowebsite.netlify.app/",
-    "source": "https://github.com/RitikaSharma003/My-Portfolio"
+    "title": "Corporate Website Redesign",
+    "imageSrc": "projects/corporate_design.png",
+    "description": "Revitalized a corporate digital presence using React.js and Tailwind CSS, focusing on performance optimization and SEO-friendly structure. Implemented immersive UI elements with Framer Motion and Swiper.js, reducing bounce rates through engaging animations. Collaborated on full-stack integration, connecting frontend views to Node.js services for low-latency data flow.",
+    "skills": ["React.js", "Tailwind CSS", "Framer Motion", "Swiper.js"],
+    "demo": "https://kasperinfotech.com/",
+    "source": ""
   }
 ]

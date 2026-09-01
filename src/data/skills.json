@@ -1,50 +1,66 @@
 [
   {
-    "title": "HTML",
-    "imageSrc": "skills/html.png"
+    "title": "JavaScript",
+    "imageSrc": "skills/javascript.png"
   },
   {
-    "title": "CSS",
-    "imageSrc":"skills/css.png"
+    "title": "React.js",
+    "imageSrc": "skills/react.png"
   },
   {
-    "title": "React",
-    "imageSrc":"skills/react.png"
+    "title": "Next.js",
+    "imageSrc": "skills/react.png"
   },
   {
-    "title": "NodeJS",
-    "imageSrc":"skills/node.png"
-  },
-  {
-    "title": "Javascript",
-    "imageSrc":"skills/javascript.png"
-  },
-  {
-    "title": "Bootsrap",
-    "imageSrc": "skills/bootstrap.png"
+    "title": "Node.js",
+    "imageSrc": "skills/node.png"
   },
   {
     "title": "Tailwind CSS",
-    "imageSrc":"skills/tailwindcss.png"
+    "imageSrc": "skills/tailwindcss.png"
   },
   {
-    "title": "SQl",
-    "imageSrc":"skills/sql.png"
+    "title": "HTML5",
+    "imageSrc": "skills/html.png"
+  },
+  {
+    "title": "CSS3",
+    "imageSrc": "skills/css.png"
+  },
+  {
+    "title": "Bootstrap",
+    "imageSrc": "skills/bootstrap.png"
+  },
+  {
+    "title": "MongoDB",
+    "imageSrc": "skills/datastructure.png"
+  },
+  {
+    "title": "MySQL / SQL",
+    "imageSrc": "skills/sql.png"
   },
   {
     "title": "C++",
     "imageSrc": "skills/cpp.png"
   },
   {
-    "title": "OOPS",
-    "imageSrc":"skills/oops.png"
+    "title": "Redux",
+    "imageSrc": "skills/react.png"
   },
   {
-    "title": "Data Structure",
-    "imageSrc":"skills/datastructure.png"
+    "title": "Express.js",
+    "imageSrc": "skills/node.png"
+  },
+  {
+    "title": "Data Structures",
+    "imageSrc": "skills/datastructure.png"
+  },
+  {
+    "title": "OOP",
+    "imageSrc": "skills/oops.png"
+  },
+  {
+    "title": "Generative AI",
+    "imageSrc": "skills/genai.jpg"
   }
-
-  
-
-
 ]

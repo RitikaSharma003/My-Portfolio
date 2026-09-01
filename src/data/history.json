@@ -1,32 +1,42 @@
 [
   {
-    "role": "Web Development Intern",
-    "organisation": "The Spark Foundation",
-    "startDate": "March, 2025",
-    "endDate": "April,2025",
+    "role": "Frontend Intern",
+    "organisation": "Kasper Infotech Pvt. Ltd.",
+    "startDate": "Feb 2026",
+    "endDate": "Aug 2026",
     "experiences": [
-      "Developed responsive web pages using HTML and CSS, ensuring cross-device compatibility.",
-      "Implemented dynamic behaviors using JavaScript.",
-      "Utilized PHP to handle backend operations like  user data processing, and server-side logic."
+      "Completed a six-month internship in Frontend Development, gaining hands-on experience building and shipping real production features.",
+      "Engineered streamlined user interfaces and dynamic layouts using React.js and Tailwind CSS, reducing average user scrolling and navigation time while improving overall usability.",
+      "Implemented smooth animations, eliminating layout stutter and decreasing Cumulative Layout Shift (CLS).",
+      "Collaborated in agile sprints to translate complex UI/UX design mockups into production-ready web features."
     ]
   },
   {
-    "role": "Web Development Freelancing",
-    "organisation": "",
-    "startDate": "June, 2025",
-    "endDate": "Currently working",
+    "role": "Freelance Frontend Developer",
+    "organisation": "The Shail Organics",
+    "startDate": "Sept 2025",
+    "endDate": "Jan 2026",
     "experiences": [
-      "Actively engaged in Freelance Frontend Web Development, specializing in building dynamic and user-friendly interfaces. Proficient in Next.js, HTML, CSS, and JavaScript with experience utilizing Chakra UI for efficient component development."
+      "Engineered a high-converting e-commerce interface using Next.js and Chakra UI, prioritizing performance and aesthetic appeal.",
+      "Developed reusable React components and integrated dynamic UI elements to enhance user engagement."
     ]
   },
   {
-    "role": "Web Development Intern",
-    "organisation": "AICTE IBM Skills  Build",
-    "startDate": "June, 2023",
-    "endDate": "July, 2023",
+    "role": "MERN Stack Training",
+    "organisation": "Q Spiders",
+    "startDate": "Aug 2025",
+    "endDate": "Jan 2026",
     "experiences": [
-      "Developed fully responsive single-page applications (SPAs) using React.js, focusing on smooth user experience and component-based architecture.",
-      "Utilized React Hooks (useState, useEffect) for efficient state and lifecycle management."
+      "Completed intensive, industry-aligned training in the MERN Stack, covering end-to-end full-stack development.",
+      "Collaborated on full-stack web solutions, implementing modern React.js workflows and RESTful principles to build interactive user dashboards."
+    ]
+  },
+   {
+    "role": "The Sparks Foundation",
+    "organisation": "Sparks Foundation",
+    "startDate": "March 2025",
+    "endDate": "April 2025",
+    "experiences": ["Full-stack web development projects as an Intern, building practical experience with HTML, CSS, JavaScript,and modern React.js frameworks."
     ]
   }
 ]
