@@ -80,7 +80,7 @@ export const Hero = () => {
           </motion.h1>
 
           <motion.h2 variants={itemVariants} className="text-2xl md:text-3xl font-semibold text-slate-600 dark:text-slate-300 mb-6">
-            <span className="text-[#43D9AD]">Frontend Developer</span> & Software Engineer
+            <span className="text-[#43D9AD]">FullStack Developer</span> & Software Engineer
           </motion.h2>
 
           <motion.p variants={itemVariants} className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0">
