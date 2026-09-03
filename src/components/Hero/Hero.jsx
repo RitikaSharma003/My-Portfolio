@@ -92,7 +92,7 @@ export const Hero = () => {
             <motion.a
               whileHover={{ scale: 1.05, boxShadow: "0px 10px 30px rgba(108,99,255,0.3)" }}
               whileTap={{ scale: 0.95 }}
-              href="/public/Resume Ritika Sharma.pdf"
+              href="/Resume Ritika Sharma.pdf"
               download
               className="group relative inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl font-semibold text-slate-900 dark:text-white overflow-hidden"
               style={{ background: "linear-gradient(135deg, #6C63FF, #8B85FF)" }}
